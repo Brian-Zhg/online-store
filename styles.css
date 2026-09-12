@@ -2,6 +2,16 @@ body {
     margin: 0;
 }
 
+h2{
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+    background-color: #7eb2dd;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
 #heading img {
     width: 10vh;
     margin-left: 10%;
@@ -87,17 +97,20 @@ body {
 }
 
 #products img{
-
     height: 200px;
+    transition: transform 0.3s ease;
 }
+
 
 .product-card {
-    border-radius: 10px;
     padding: 20px;
     text-align: center;
-    
+    margin-bottom: 2vh;
 }
 
+#weird{
+    background-color: #BC96E6;
+}
 
 @font-face {
     font-family: 'poppins';
@@ -105,3 +118,94 @@ body {
 
 }
 
+#products img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.css-button-retro--green {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: font-bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #585858;
+  color: #fff;
+  background: transparent;
+  z-index: 0;
+}
+.css-button-retro--green:hover:after {
+  top: 0;
+  left: 0;
+}
+.css-button-retro--green:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #8CA0D7;
+}
+
+
+footer {
+    margin-top: 80px;
+    padding: 40px 10% 20px;
+    background-color: #fdf7e6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-brand h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+}
+
+.footer-links,
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a,
+.footer-socials a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 12px;
+}
