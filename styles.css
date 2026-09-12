@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+}
+
+#heading img {
+    width: 10vh;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+#heading {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    background-color: #fdf7e6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#heading ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+#heading li {
+    font-size: large;
+}
+
+#heading li:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#heading #shopping {
+    width: 4vh;
+    height: 4vh;
+    margin-left: 10%;
+    cursor: pointer;
+    margin-top: 3vh;
+    margin-left: 70%;
+    transition: all 0.3s ease-in-out;
+}
+
+#heading #shopping:hover {
+    transform: scale(2);
+}
+
+#cover {
+    width: 100%;
+    background-color: #524948;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    height: 50vh;
+}
+
+#cover #box-text {
+    left: 20%;
+    margin: auto;
+}
+
+#cover img {
+    width: 40%;
+}
+
+#cover p {
+    font-family: 'poppins', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#products img{
+
+    height: 200px;
+}
+
+.product-card {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+@font-face {
+    font-family: 'poppins';
+    src: url('fonts/poppins-webfont/Poppins-Medium.woff') format('woff');
+
+}
+
