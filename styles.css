@@ -209,3 +209,225 @@ footer {
     text-align: center;
     font-size: 12px;
 }
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#heading {
+    min-height: 70px;
+    height: 10vh;
+    align-items: center;
+}
+
+#heading img {
+    width: clamp(55px, 7vw, 90px);
+    height: auto;
+    margin-left: 5%;
+}
+
+#heading ul {
+    gap: clamp(20px, 5vw, 70px);
+    margin-top: 0;
+}
+
+#heading li {
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+#heading #shopping {
+    width: clamp(25px, 3vw, 40px);
+    height: auto;
+    margin: 0 5% 0 auto;
+}
+
+
+#cover {
+    min-height: 400px;
+    height: 50vh;
+    padding: 20px 5%;
+}
+
+#cover #box-text {
+    margin: auto;
+}
+
+#cover img {
+    width: min(40%, 500px);
+    height: auto;
+    object-fit: contain;
+}
+
+#cover p {
+    font-size: clamp(20px, 3vw, 36px);
+}
+
+
+#products {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: clamp(15px, 3vw, 30px);
+}
+
+.product-card {
+    padding: clamp(10px, 2vw, 20px);
+}
+
+#products img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+footer {
+    padding: 40px 5% 20px;
+}
+
+.footer-content {
+    gap: clamp(20px, 4vw, 40px);
+}
+
+
+/* Tablets  */
+@media (max-width: 768px) {
+
+    #heading {
+        height: 80px;
+    }
+
+    #heading img {
+        margin-left: 3%;
+    }
+
+    #heading ul {
+        gap: 25px;
+    }
+
+    #heading #shopping {
+        margin-right: 3%;
+    }
+
+    #cover {
+        height: auto;
+        min-height: 400px;
+    }
+
+    #cover img {
+        width: 45%;
+    }
+
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+
+    #heading {
+        height: 70px;
+    }
+
+    #heading img {
+        width: 50px;
+        margin-left: 15px;
+    }
+
+    #heading ul {
+        position: static;
+        transform: none;
+
+        gap: 12px;
+        margin: 0 auto;
+    }
+
+    #heading li {
+        font-size: 12px;
+    }
+
+    #heading #shopping {
+        width: 25px;
+        margin: 0 15px 0 5px;
+    }
+
+
+    /* COVER */
+
+    #cover {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: auto;
+        min-height: 500px;
+
+        padding: 30px 20px;
+    }
+
+    #cover #box-text {
+        width: 100%;
+    }
+
+    #cover p {
+        font-size: clamp(22px, 7vw, 32px);
+    }
+
+    #cover img {
+        width: 80%;
+        max-width: 350px;
+    }
+
+
+    /* PRODUCTS */
+
+    #products {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    #products img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 40px;
+        padding: 30px 20px 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-brand h3 {
+        font-size: 20px;
+    }
+}
